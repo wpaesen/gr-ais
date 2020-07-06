@@ -1179,10 +1179,10 @@
     </param>
   </block>
   <block>
-    <key>digital_msk_correlate_cc</key>
+    <key>digital_corr_est_cc</key>
     <param>
       <key>id</key>
-      <value>digital_msk_correlate_cc_0</value>
+      <value>digital_corr_est_cc_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -1193,8 +1193,8 @@
       <value>preamble</value>
     </param>
     <param>
-      <key>bt</key>
-      <value>0.4</value>
+      <key>mark_delay</key>
+      <value>0</value>
     </param>
     <param>
       <key>sps</key>
@@ -1892,10 +1892,10 @@
     </param>
   </block>
   <block>
-    <key>satisfi_square_and_fft_sync</key>
+    <key>ais_square_and_fft_sync</key>
     <param>
       <key>id</key>
-      <value>satisfi_square_and_fft_sync_0</value>
+      <value>ais_square_and_fft_sync_0</value>
     </param>
     <param>
       <key>_enabled</key>
@@ -3011,19 +3011,19 @@
     <sink_key>print</sink_key>
   </connection>
   <connection>
-    <source_block_id>digital_msk_correlate_cc_0</source_block_id>
+    <source_block_id>digital_corr_est_cc_0</source_block_id>
     <sink_block_id>blocks_null_sink_0</sink_block_id>
     <source_key>1</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>analog_feedforward_agc_cc_0</source_block_id>
-    <sink_block_id>digital_msk_correlate_cc_0</sink_block_id>
+    <sink_block_id>digital_corr_est_cc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>digital_msk_correlate_cc_0</source_block_id>
+    <source_block_id>digital_corr_est_cc_0</source_block_id>
     <sink_block_id>digital_msk_timing_recovery_cc_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -3095,7 +3095,7 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>digital_msk_correlate_cc_0</source_block_id>
+    <source_block_id>digital_corr_est_cc_0</source_block_id>
     <sink_block_id>analog_quadrature_demod_cf_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
@@ -3107,14 +3107,14 @@
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>satisfi_square_and_fft_sync_0</source_block_id>
+    <source_block_id>ais_square_and_fft_sync_0</source_block_id>
     <sink_block_id>pfb_arb_resampler_xxx_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
     <source_block_id>osmosdr_source_0</source_block_id>
-    <sink_block_id>satisfi_square_and_fft_sync_0</sink_block_id>
+    <sink_block_id>ais_square_and_fft_sync_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
